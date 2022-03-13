@@ -5,6 +5,24 @@ HomeWork :3
 
 Marvel Guild
 
+#RUN MARVELGUILD LOCALLY
+Install Expo Go
+1) go to google play store
+2) search for expo go and install
+3) set up account
+
+On Android
+1) Download marvel guild and unzip
+2) navigate to project using command prompt or IDE terminal
+3) enter command below
+$ nmp install
+4) enter command below
+$ npm start
+5) open expo go app and press 'Scan QR Code'
+6) allign the square scanner to fit the qr code on screen 
+
+
+
 BELLS AND WHISTLES
 
 1) I added Images of character
