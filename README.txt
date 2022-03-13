@@ -1,6 +1,6 @@
 
 NAME : JOSEPH ADOGERI
-EMAIL :jadogeri@uno.edu
+EMAIL :joekadama@hotmail.com
 HomeWork :3 
 
 Marvel Guild
