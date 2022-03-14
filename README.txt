@@ -13,13 +13,14 @@ Install Expo Go
 
 On Android
 1) Download marvel guild and unzip
-2) navigate to project using command prompt or IDE terminal
-3) enter command below
-$ nmp install
+2) Open a terminal or IDE
+3) navigate to project using terminal or IDE 
 4) enter command below
+$ nmp install
+5) enter command below
 $ npm start
-5) open expo go app and press 'Scan QR Code'
-6) allign the square scanner to fit the qr code on screen 
+6) open expo go app and press 'Scan QR Code'
+7) allign the square scanner to fit the qr code on screen 
 
 
 
