@@ -1,28 +1,33 @@
-const heroReducer = (updatedHero, action) => {
-    console.log('IN HERO REDUCER LINE 2',updatedHero);
-    
-try{
-    switch (action.attributeToChange) {
 
-        case 'update':
-            return {
-                ...updatedHero,
-                currentHealth: updatedHero.currentHealth + 5,
-                maxHealth: updatedHero.maxHealth + 5,
-                level: updatedHero.level + 1,
-                power: updatedHero.power + 5,
-                gold: updatedHero.gold - action.amount
-                
+export const heroReducer = (state, action) => {
+    switch (action.type) {
+        case 'get_Hero':
+            return action.payload;
+        case 'add_Hero':
+            return [...state, {
+                id: Math.floor(Math.random() * 999999),
+                name: action.payload.name,
+                currentHealth: action.payload.currentHealth,
+                maxHealth: action.payload.maxHealth,
+                gold: action.payload.gold,
+                level: action.payload.level,
+                power: action.payload.power
             }
-       
+            ]
+        case 'delete_Hero':
+            return state.filter((hero) => {
+                return hero.id !== action.payload
+            });
+        case 'edit_Hero':
+            return state.map((hero) => {
+                if (hero.id === action.payload.id) {
+                    return action.payload;
+                }
+                else {
+                    return hero;
+                }
+            })
         default:
-            console.log('line 97',updatedHero);
-            return updatedHero
+            return state;
     }
-}catch(e){
-    console.log('details line 104',e);
 }
-
-}
-
-export default heroReducer;

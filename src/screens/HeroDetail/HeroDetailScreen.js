@@ -6,7 +6,7 @@ import LevelButton from "../../components/LevelButton"
 import CombatDetail from "../../components/CombatDetail"
 import GameBoard from "../../components/GameBoard"
 import styles from "./HeroDetailStyle"
-import heroReducer from "../../reducers/heroReducer"
+import heroReducer from "../../reducers/activePlayerReducer"
 
 let routeTaken = {
     data2: false,
