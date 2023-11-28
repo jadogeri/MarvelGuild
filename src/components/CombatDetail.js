@@ -13,7 +13,7 @@ const CombatDetail = (props) => {
         <View style={styles.messageborderStyle}>
         <Text>  {props.scene} was a {props.roundVerdict}  </Text>
        <Text>  {props.avengerName} {props.goldDifference>0?<Text>gained {props.goldDifference} of gold</Text>:<Text>lost  {props.goldDifference} of gold</Text>} 
-       {props.goldDifference<0?<Text> but gained {props.healthDifference} of health</Text>:<Text>lost  {props.goldDifference} of health</Text>}</Text>
+       {props.goldDifference<0?<Text> and lost {props.healthDifference} of health</Text>:<Text> and gained  {props.goldDifference} of health</Text>}</Text>
       
         <Text>{props.newHealth > 0?<Text> {props.avengerName} is alive:</Text>:<Text> {props.avengerName} is dead:</Text>}</Text>
         </View> 
